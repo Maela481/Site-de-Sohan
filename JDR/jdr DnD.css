@@ -1,8 +1,8 @@
 body {
     font-family: 'Orbitron', sans-serif;
-    background: url('./cops.jpg') no-repeat center center fixed;
+    background: url('./bg\ dnd.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #f1f1f1; /* Texte clair pour contraster avec l'arrière-plan sombre */
+    color: #f1f1f1;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -14,20 +14,20 @@ body {
     border-radius: 10px;
     max-width: 900px;
     margin: auto;
-    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.7); /* Jaune pour un effet d'alerte */
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.7);
 }
 
 h1 {
-    color: #ff0000; /* Rouge vif pour attirer l'attention, comme un avertissement */
-    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.8);
+    color: #ffcc00;
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 h2 {
-    color: #ffcc00; /* Jaune lumineux pour rappeler l'effet d'avertissement d'une scène de crime */
-    border-bottom: 2px solid #ffcc00;
+    color: #ff5733;
+    border-bottom: 2px solid #ff5733;
     padding-bottom: 5px;
     display: inline-block;
     margin-top: 20px;
@@ -38,7 +38,6 @@ p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 20px;
-    color: #f1f1f1; /* Texte blanc pour une lisibilité optimale */
 }
 
 ul {
@@ -52,13 +51,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #ffcc00; /* Jaune pour rappeler le danger ou l'avertissement */
+    color: #ffcc00;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ff0000; /* Rouge pour l'état au survol, intensifiant l'effet de danger */
+    color: #ff5733;
 }
 
 /* Styles spécifiques aux documents PDF */
