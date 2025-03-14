@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohan</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+    <div class="content">
+        <header>
+            <h1 id="mon-titre">Le Site de Sohan</h1>
+            <button class="menu-toggle">☰</button>
+        </header>
+        <nav class="flexbox">
+            <ul>
+                <li class="has-sous-nav">
+                    <img src="./images/whr.png" alt="">
+                    <span>Mes Warhammer</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href="./space-marine/Space Marine.html">Space Marines</a></li>
+                        <li><a href="./Ork/ork.html">Ork</a></li>
+                        <li><a href="./Codex/codex.html">Codex</a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <img src="./images/dé.png" alt="">
+                    <span>Mes jeux de rôle</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href="./JDR/JDR fallout.html">JDR Fallout</a></li>
+                        <li><a href="./JDR/jdr cops.html">JDR Cops</a></li>
+                        <li><a href="./JDR/jdr warhammer.html">JDR Warhammer</a></li>
+                        <li><a href="./JDR/jdr warhammer.html">JDR DnD</a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <img src="./images/logolego.png" alt=""> 
+                    <span>Mes LEGO</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <img src="./images/kdo.png" alt=""> 
+                    <span>Ma liste de souhaits</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href="./souhaits/jdr.html">JDR</a></li>
+                        <li><a href="./souhaits/warhammer.html">Warhammer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="biographie">
+            <h2>À propos de moi</h2>
+            <p>Passionné par Warhammer, les jeux de rôle, les LEGO et tout l'univers fantastique, j'aime créer, inventer et partager mes projets. <br> Pour une meilleure expérience, regardez ce site sur ordinateur. </p>
+        </section>
+        <section id="ressources">
+            <h2>Ressources utiles</h2>
+            <ul>
+                <li><a href="https://www.warhammer.com" target="_blank">Site officiel de Warhammer</a></li>
+                <li><a href="https://www.lego.com" target="_blank">Site officiel LEGO</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Sohan. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav.flexbox');
+        const sousMenuToggles = document.querySelectorAll('.sous-menu-toggle');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        sousMenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parentLi = toggle.parentElement;
+                parentLi.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
